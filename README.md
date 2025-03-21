@@ -86,4 +86,51 @@ label_greeting.place(x=100, y=140, width=110, height=35)
 6. Переконатися, що появилося вікно із текстовим полем і кнопкою
 7. Ввести ім'я у текстове поле і натиснути на кнопку. Переконатися, що появиться привітання
 8. Пояснити кожен рядок коду
-9. Змінити програму так, щоб появилося поле "Прізвище" і при введенні імені і прізвища та натисканні кнопки виводилося відповідне привітання 
+9. Змінити програму так, щоб появилося поле "Прізвище" і при введенні імені і прізвища та натисканні кнопки виводилося відповідне привітання
+
+# Практична робота 15
+
+1. Запустити програму IDLE (в меню Пуск -> Python -> IDLE)
+2. Створити новий файл (File -> New File)
+3. Зберегти файл (File -> Save File As...)
+4. Скопіювати і вставити наступний код
+   
+```python
+from tkinter import *
+from turtle import *
+
+def draw_graphics():
+    # Малюємо
+    x = entry.get()
+    x = int(x)
+    t.forward(x)
+    t.right(90)
+
+def clear_graphics():
+    # Очищуємо екран
+    t.clear()
+
+# Глобальне вікно turtle та черепашка
+screen = Screen()
+screen.setup(width=800, height=600)
+
+t = Turtle()  # Створюємо черепашку
+
+# Головна програма Tkinter
+tk = Tk()
+
+# Додаємо текстове поле
+entry = Entry(tk)
+entry.pack(pady=10)
+
+# Додаємо кнопки
+button_draw = Button(tk, text="Намалювати", command=draw_graphics)
+button_draw.pack(pady=10)
+
+button_clear = Button(tk, text="Очистити екран", command=clear_graphics)
+button_clear.pack(pady=10)
+
+# Запускаємо головний цикл Tkinter
+tk.mainloop()
+```
+
