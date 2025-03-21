@@ -6,8 +6,6 @@
 4. Скопіювати і вставити наступний код
 
 ```python
-https://github.com/tvvas/python
-
 from tkinter import *
 from turtle import *
 
@@ -56,4 +54,36 @@ tk.mainloop()
 6. Написати функцію `draw_k()`, яка будує квадрат
 7. Зробити так, щоб при натисканні на кнопку "Квадрат" був зображений квадрат
 
+# Практична робота 14
 
+1. Запустити програму IDLE (в меню Пуск -> Python -> IDLE)
+2. Створити новий файл (File -> New File)
+3. Зберегти файл (File -> Save File As...)
+4. Скопіювати і вставити наступний код
+
+```python
+from tkinter import *
+tk = Tk()
+tk.geometry("300x250")
+
+def click():
+    label_greeting.config(text="Привіт,"+entry1.get())
+
+label1 = Label(text="Ім'я")
+entry1 = Entry()    
+
+btn = Button(text="Привітання", command=click)
+
+label_greeting = Label()
+
+label1.place(x=50, y=20, width=110, height=35)
+entry1.place(x=150, y=20, width=110, height=35)
+btn.place(x=100, y=100, width=110, height=35)
+label_greeting.place(x=100, y=140, width=110, height=35)
+```
+
+5. Запустити програму на виконання (Run -> Run Module)
+6. Переконатися, що появилося вікно із текстовим полем і кнопкою
+7. Ввести ім'я у текстове поле і натиснути на кнопку. Переконатися, що появиться привітання
+8. Пояснити кожен рядок коду
+9. Змінити програму так, щоб появилося поле "Прізвище" і при введенні імені і прізвища та натисканні кнопки виводилося відповідне привітання 
