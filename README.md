@@ -191,25 +191,24 @@ t = Turtle()  # Створюємо черепашку
 tk = Tk()
 tk.geometry("400x300")
 
-# Перший рядок: Label і Entry
-label1 = Label(tk, text="Довжина сходинки:")
-label1.place(x=20, y=20)  # Розташування за координатами
-entry1 = Entry(tk)
-entry1.place(x=150, y=20)  # Розташування поруч
 
-# Другий рядок: Label і Entry
+label1 = Label(tk, text="Довжина сходинки:")
+label1.pack()  
+entry1 = Entry(tk)
+entry1.pack()  
+
 label2 = Label(tk, text="Кількість сходинок:")
-label2.place(x=20, y=60)  # Розташування за координатами
+label2.pack()  
 entry2 = Entry(tk)
-entry2.place(x=150, y=60)  # Розташування поруч
+entry2.pack()
 
 # Кнопка "Намалювати сходи"
 button_draw = Button(tk, text="Намалювати сходи", command=draw_graphics)
-button_draw.place(x=20, y=100, width=150)  # Розташування кнопки з шириною
+button_draw.pack()
 
 # Кнопка "Очистити екран"
 button_clear = Button(tk, text="Очистити екран", command=clear_graphics)
-button_clear.place(x=200, y=100, width=150)  # Розташування кнопки з шириною
+button_clear.pack()
 
 # Запуск програми
 tk.mainloop()
