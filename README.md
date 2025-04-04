@@ -215,3 +215,49 @@ button_clear.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
 root.mainloop()
 ```
 5. Дописати код так, щоб при натисканні кнопки було побудовано введену кількість сходинок. Інформацію про цикли можна знайти тут https://www.w3schools.com/python/python_for_loops.asp
+
+# Практична робота 19
+
+1. Запустити програму IDLE (в меню Пуск -> Python -> IDLE)
+2. Створити новий файл (File -> New File)
+3. Зберегти файл (File -> Save File As...)
+4. Скопіювати і вставити наступний код
+
+```python
+import turtle
+
+# Створення екрану та черепашки
+screen = turtle.Screen()
+screen.title("Обробка клавіш")
+screen.setup(width=600, height=600)
+t = turtle.Turtle()
+t.speed(0)
+
+# Функції для обробки натискання клавіш
+def move_up():
+    t.setheading(90)
+    t.forward(20)
+
+def move_down():
+    t.setheading(270)
+    t.forward(20)
+
+def move_left():
+    t.setheading(180)
+    t.forward(20)
+
+def move_right():
+    t.setheading(0)
+    t.forward(20)
+
+# Зв'язування клавіш зі стрілками
+screen.listen()  # Активує обробку подій клавіатури
+screen.onkey(move_up, "Up")
+screen.onkey(move_down, "Down")
+screen.onkey(move_left, "Left")
+screen.onkey(move_right, "Right")
+
+# Запуск головного циклу
+screen.mainloop()
+```
+5. Дописати код так, щоб при натисканні: клавіші зі стрілкою вліво було повернуто курсор на 15 градусів вліво, клавіші зі стрілкою вправо було повернуто курсор на 15 градусів вправо, клавіші зі стрілкою вгору курсор рухався вперед, клавіші зі стрілкою вниз курсор повертався на 180 градусів. 
