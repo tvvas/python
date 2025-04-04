@@ -189,32 +189,33 @@ t = Turtle()  # Створюємо черепашку
 
 
 tk = Tk()
+tk.geometry("400x300")
 
 # Перший рядок: Label і Entry
 label1 = Label(tk, text="Довжина сходинки:")
-label1.grid(row=0, column=0, padx=5, pady=5)
-
+label1.place(x=20, y=20)  # Розташування за координатами
 entry1 = Entry(tk)
-entry1.grid(row=0, column=1, padx=5, pady=5)
+entry1.place(x=150, y=20)  # Розташування поруч
 
 # Другий рядок: Label і Entry
 label2 = Label(tk, text="Кількість сходинок:")
-label2.grid(row=1, column=0, padx=5, pady=5)
-
+label2.place(x=20, y=60)  # Розташування за координатами
 entry2 = Entry(tk)
-entry2.grid(row=1, column=1, padx=5, pady=5)
+entry2.place(x=150, y=60)  # Розташування поруч
 
-# Додаємо кнопки
+# Кнопка "Намалювати сходи"
 button_draw = Button(tk, text="Намалювати сходи", command=draw_graphics)
-button_draw.grid(row=2, column=0, columnspan=2, padx=5, pady=5)
+button_draw.place(x=20, y=100, width=150)  # Розташування кнопки з шириною
 
+# Кнопка "Очистити екран"
 button_clear = Button(tk, text="Очистити екран", command=clear_graphics)
-button_clear.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
+button_clear.place(x=200, y=100, width=150)  # Розташування кнопки з шириною
 
-
-root.mainloop()
+# Запуск програми
+tk.mainloop()
 ```
 5. Дописати код так, щоб при натисканні кнопки було побудовано введену кількість сходинок. Інформацію про цикли можна знайти тут https://www.w3schools.com/python/python_for_loops.asp
+6. Змінити код так, щоб були поля для введення ширини і висоти сходинки. Сходи мають будуватися згідно із цими розмірами
 
 # Практична робота 19
 
