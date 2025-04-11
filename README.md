@@ -382,8 +382,75 @@ tk.mainloop()
 
 ![](images/3c.png)
 
-
 # Практична робота 21
+
+1. Запустити програму IDLE (в меню Пуск -> Python -> IDLE)
+2. Створити новий файл (File -> New File)
+3. Зберегти файл (File -> Save File As...)
+4. Скопіювати і вставити наступний код
+```python
+from tkinter import *
+from turtle import *
+
+
+
+def draw_graphics():
+    # Радіус кола
+    r = entry1.get()
+    r = int(r)
+
+    # Кількість кіл
+    n = entry2.get()
+    n = int(n)
+    
+    for i in range(n):
+        t.forward(r)
+        t.left(90)
+
+def clear_graphics():
+    # Очищуємо екран
+    t.clear()
+
+# Глобальне вікно turtle та черепашка
+screen = Screen()
+screen.setup(width=800, height=600)
+
+t = Turtle()  # Створюємо черепашку
+
+
+tk = Tk()
+tk.geometry("400x300")
+
+
+label1 = Label(tk, text="Радіус кола:")
+label1.pack()  
+entry1 = Entry(tk)
+entry1.pack()  
+
+label2 = Label(tk, text="Кількість кіл:")
+label2.pack()  
+entry2 = Entry(tk)
+entry2.pack()
+
+# Кнопка "Намалювати сходи"
+button_draw = Button(tk, text="Намалювати кола", command=draw_graphics)
+button_draw.pack()
+
+# Кнопка "Очистити екран"
+button_clear = Button(tk, text="Очистити екран", command=clear_graphics)
+button_clear.pack()
+
+# Запуск програми
+tk.mainloop()
+```
+5. Спробувати запускати програму при різних значеннях параметрів
+6. Пояснити кожен рядок коду
+7. Дописати код так, щоб при натисканні на кнопку була побудована задана кількість кіл заданого радіуса, розміщених як на малюнку нижче
+![](images/21.png)
+
+
+
+# Практична робота 22
 
 1. Запустити програму IDLE (в меню Пуск -> Python -> IDLE)
 2. Створити новий файл (File -> New File)
