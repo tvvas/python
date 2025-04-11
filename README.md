@@ -282,6 +282,59 @@ tk.mainloop()
 2. Створити новий файл (File -> New File)
 3. Зберегти файл (File -> Save File As...)
 4. Скопіювати і вставити наступний код
+```python
+from tkinter import *
+from turtle import *
+
+
+def draw_graphics():
+    # Малюємо
+    x = entry1.get()
+    x = int(x)
+    t.left(90)
+    t.forward(x)
+
+def clear_graphics():
+    # Очищуємо екран
+    t.clear()
+
+# Глобальне вікно turtle та черепашка
+screen = Screen()
+screen.setup(width=800, height=600)
+
+t = Turtle()  # Створюємо черепашку
+
+tk = Tk()
+tk.geometry("400x300")
+
+label1 = Label(tk, text="Радіус кола:")
+label1.pack()  
+entry1 = Entry(tk)
+entry1.pack()  
+
+# Кнопка "Намалювати сходи"
+button_draw = Button(tk, text="Намалювати коло, вписане в квадрат", command=draw_graphics)
+button_draw.pack()
+
+# Кнопка "Очистити екран"
+button_clear = Button(tk, text="Очистити екран", command=clear_graphics)
+button_clear.pack()
+
+# Запуск програми
+tk.mainloop()
+
+```
+5. Дописати код так, щоб при натисканні на кнопку було намальовано коло заданого радуіса, вписане в квадрат (так, як на малюнку нижче)
+6. Продемонструвати роботу програми принаймні при двох різних радіусах
+
+![](images/csquare.png)
+
+# Практична робота 20
+
+1. Запустити програму IDLE (в меню Пуск -> Python -> IDLE)
+2. Створити новий файл (File -> New File)
+3. Зберегти файл (File -> Save File As...)
+4. Скопіювати і вставити наступний код
 
 ```python
 import turtle
