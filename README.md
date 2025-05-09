@@ -533,4 +533,7 @@ print(f"Квадрат введеного Вами числа: {y}")
 # Практична робота 25
 1. Розробка власного проекту на Python
 
+# Практична робота 26
+Виконати завдання із документу https://colab.research.google.com/drive/1f2KZhp4QfODKNbqgvr2jabgh4zUti722?usp=sharing
+
 
