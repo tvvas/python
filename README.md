@@ -536,4 +536,8 @@ print(f"Квадрат введеного Вами числа: {y}")
 # Практична робота 26
 Виконати завдання із документу https://colab.research.google.com/drive/1f2KZhp4QfODKNbqgvr2jabgh4zUti722?usp=sharing
 
+# Практична робота 27
+Виконати завдання із документу
+https://colab.research.google.com/drive/185OTM5h3H_hBsS0pR7epADoukgraxBZ4?usp=sharing
+
 
