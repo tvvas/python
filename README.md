@@ -540,4 +540,8 @@ print(f"Квадрат введеного Вами числа: {y}")
 Виконати завдання із документу
 https://colab.research.google.com/drive/185OTM5h3H_hBsS0pR7epADoukgraxBZ4?usp=sharing
 
+# Практична робота 28
+Виконати завдання із документу
+https://colab.research.google.com/drive/1ykYXBkJAWtxJPzklPYEF_JFu-TvOj4Sn?usp=sharing
+
 
