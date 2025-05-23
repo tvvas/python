@@ -544,4 +544,8 @@ https://colab.research.google.com/drive/185OTM5h3H_hBsS0pR7epADoukgraxBZ4?usp=sh
 Виконати завдання із документу
 https://colab.research.google.com/drive/1ykYXBkJAWtxJPzklPYEF_JFu-TvOj4Sn?usp=sharing
 
+# Практична робота 29
+Виконати завдання із документу
+https://colab.research.google.com/drive/1d-dS2ZtPZ1s2_nX1VeMwTKyQaWAnI0v2?usp=sharing
+
 
